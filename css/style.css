@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Элементүүдийн нийт өргөн ба өндөрт padding ба border-ийг багтааж тооцно */
+}
+
+body {
+    font-family: Arial, sans-serif; /* Илүү уншихад тохиромжтой бичвэрийн фонт */
+    line-height: 1.6; /* Уншихад илүү хялбар болгох */
+    border: solid black; /* Биеийн хүрээний хүрээ */
+}
+
+.Container {
+    max-width: 1200px; /* Том дэлгэцүүд дээр хамгийн их өргөн */
+    margin: 0 auto; /* Контейнерийг төвлөрүүлэх */
+    width: 100%; 
+    min-height: 1500px; /* Тогтмол өндөр оронд хамгийн бага өндөр */
+    border: solid red; /* Контейнерын хүрээ */
+}
+
+.Header {
+    display: flex;
+    justify-content: space-between; /* Элементүүдийг хооронд нь зайтай байрлуулна */
+    align-items: center; /* Дээрээ ба доороо тэгшлэх */
+    padding: 20px;
+    flex-wrap: wrap; /* Жижиг дэлгэцүүдэд багтаах */
+    border: solid black; /* Header хэсгийн хүрээ */
+}
+
+.Header img {
+    max-width: 100px;
+    height: auto;
+    border: solid blue; /* Логоны зургийн хүрээ */
+}
+
+.button1 {
+    display: flex;
+    flex-wrap: wrap; /* Бүх товчлууруудыг жижиг дэлгэцэнд багтаах */
+    justify-content: flex-end; /* Баруун талд байрлуулах */
+    gap: 15px; /* Товчлууруудын хоорондох зай */
+    border: solid green; /* Товчлууруудын хэсгийн хүрээ */
+}
+
+.button1 button {
+    padding: 10px 15px;
+    background-color: #f0f0f0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.button1 button:hover {
+    background-color: #e0e0e0; /* Товчлуур дээр хулганаар дарвал өнгө нь өөрчлөгдөх */
+}
+
+.Social {
+    display: flex;
+    justify-content: center; /* Төвлөрүүлэх */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 15px;
+    background-color: #f8f9fa; /* Нэмэлт дэвсгэр өнгө */
+    border: solid orange; /* Нийгмийн сүлжээний хэсгийн хүрээ */
+}
+
+.Social a {
+    display: flex;
+    align-items: center;
+    color: #333;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s ease;
+}
+
+.Social a i {
+    margin-right: 8px;
+    font-size: 20px;
+}
+
+.Social a:hover {
+    color: #007BFF; /* Хулганы курсор дээр өнгө нь өөрчлөгдөх */
+}
+
+.Contact {
+    width: 100%;
+    position: relative;
+    border: solid yellow; /* Холболтын хэсгийн хүрээ */
+}
+
+.owl-carousel {
+    width: 100%;
+    max-height: 600px; /* Carousel-ийн хамгийн их өндөр */
+    overflow: hidden;
+    border: solid purple; /* OwlCarousel-ийн хүрээ */
+}
+
+.owl-carousel .item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid gray; /* Carousel item-ийн хүрээ */
+}
+
+.owl-carousel .item img {
+    max-width: 100%;
+    max-height: 600px;
+    object-fit: cover; /* Зурагнуудын хувийн харьцааг хадгалж, бүсийг дүүргэх */
+}
+
+.Undefined {
+    width: 100%;
+    padding: 20px;
+    background-color: #f1f1f1;
+    border: solid brown; /* Undefined хэсгийн хүрээ */
+}
+
+/* Responsive Design (Хариулттай загвар) */
+@media screen and (max-width: 768px) {
+    .Header {
+        flex-direction: column; /* Дэлгэцийн хэмжээнээс хамааран Header-ийн байрлалыг багасгах */
+        text-align: center;
+    }
+
+    .button1 {
+        justify-content: center;
+        margin-left: 0;
+        margin-top: 15px;
+    }
+
+    .Social {
+        flex-direction: column; /* Нийгмийн сүлжээний холбоосуудыг багасгах */
+        align-items: center;
+    }
+
+    .Social a {
+        margin-bottom: 10px;
+    }
+}
+
+/* Icon Styling (Иконы загвар) */
+.fab, .fas {
+    transition: color 0.3s ease;
+}
+
+.fab.fa-facebook {
+    color: #4267B2;
+}
+
+.fab.fa-instagram {
+    color: #C13584;
+}
+
+.fas {
+    color: #333;
+}
