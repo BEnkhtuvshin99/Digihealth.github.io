@@ -55,7 +55,7 @@ body {
 
 .button1 a {
     padding: 10px 15px;
-    /*background: linear-gradient(135deg, #ffdca9, #ffbc8b); /* Шаргал-улаан өнгийн градиент */
+     background-color: rgb(118, 118, 247);
     /*border: 1px solid #ddd;*/
     border-radius: 5px;
     color: #070606; /* Цагаан текст */
