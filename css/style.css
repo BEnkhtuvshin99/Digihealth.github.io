@@ -20,7 +20,7 @@ body {
     min-height: 1500px; /* Тогтмол өндөр оронд хамгийн бага өндөр */
     /*border: solid red; /* Контейнерын хүрээ */
     background: white;
-    border-radius: 10px; /* Дугуй булангууд */
+    border-radius: 0px; /* Дугуй булангууд */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Нарийхан сүүдэр */
 }
 
@@ -34,6 +34,7 @@ body {
     background: white;
     border-radius: 10px; /* Дугуй булангууд */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Сүүдэр */
+    
 }
 
 .Header img {
@@ -55,7 +56,8 @@ body {
 
 .button1 a {
     padding: 10px 15px;
-     background-color: rgb(118, 118, 247);
+    background-color: rgb(118, 118, 247);
+    /*background: linear-gradient(135deg, #ffdca9, #ffbc8b); /* Шаргал-улаан өнгийн градиент */
     /*border: 1px solid #ddd;*/
     border-radius: 5px;
     color: #070606; /* Цагаан текст */
@@ -82,14 +84,10 @@ body {
     /*border: solid orange; /* Нийгмийн сүлжээний хэсгийн хүрээ */
     border-radius: 10px; /* Дугуй булангууд */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Сүүдэр */
+    
 }
-.Social a {
-    text-decoration: none; /* Remove the default underline */
-    color: inherit; /* Inherit color from parent element (optional) */
-}
-
-.Social a:hover {
-    text-decoration: none; /* Ensure no underline on hover */
+.Social a{
+    text-decoration: none;
 }
 
 .Contact {
