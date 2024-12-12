@@ -83,6 +83,14 @@ body {
     border-radius: 10px; /* Дугуй булангууд */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Сүүдэр */
 }
+.Social a {
+    text-decoration: none; /* Remove the default underline */
+    color: inherit; /* Inherit color from parent element (optional) */
+}
+
+.Social a:hover {
+    text-decoration: none; /* Ensure no underline on hover */
+}
 
 .Contact {
     width: 100%;
