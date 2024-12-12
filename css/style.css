@@ -1,24 +1,25 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Элементүүдийн нийт өргөн ба өндөрт padding ба border-ийг багтааж тооцно */
+    /*box-sizing: border-box; /* Элементүүдийн нийт өргөн ба өндөрт padding ба border-ийг багтааж тооцно */
 }
 
 body {
     font-family: Arial, sans-serif; /* Илүү уншихад тохиромжтой бичвэрийн фонт */
     line-height: 1.6; /* Уншихад илүү хялбар болгох */
     background: linear-gradient(135deg, #f8d7b9, #ffe4c4); /* Зөөлөн шаргал-гуацан өнгийн градиент */
-    border: solid black; /* Биеийн хүрээний хүрээ */
+    /*border: solid black; /* Биеийн хүрээний хүрээ */
     color: #333; /* Тод хар текст */
+    width: 100%;
 }
 
 .Container {
-    max-width: 1200px; /* Том дэлгэцүүд дээр хамгийн их өргөн */
+    max-width: 2000px; /* Том дэлгэцүүд дээр хамгийн их өргөн */
     margin: 0 auto; /* Контейнерийг төвлөрүүлэх */
     width: 100%; 
     min-height: 1500px; /* Тогтмол өндөр оронд хамгийн бага өндөр */
-    border: solid red; /* Контейнерын хүрээ */
-    background: linear-gradient(135deg, #fbd1a2, #f9e4d4); /* Зөөлөн улбар шар градиент */
+    /*border: solid red; /* Контейнерын хүрээ */
+    background: white;
     border-radius: 10px; /* Дугуй булангууд */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Нарийхан сүүдэр */
 }
@@ -29,8 +30,8 @@ body {
     align-items: center; /* Дээрээ ба доороо тэгшлэх */
     padding: 20px;
     flex-wrap: wrap; /* Жижиг дэлгэцүүдэд багтаах */
-    border: solid black; /* Header хэсгийн хүрээ */
-    background: linear-gradient(90deg, #fbe7b3, #f9c0b6); /* Шаргал-улаан өнгийн зөөлөн градиент */
+    /*border: solid black; /* Header хэсгийн хүрээ */
+    background: white;
     border-radius: 10px; /* Дугуй булангууд */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Сүүдэр */
 }
@@ -38,9 +39,10 @@ body {
 .Header img {
     max-width: 100px;
     height: auto;
-    border: solid blue; /* Логоны зургийн хүрээ */
+    /*border: solid blue; /* Логоны зургийн хүрээ */
     border-radius: 50%; /* Дугуй логон хүрээ */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Сүүдэр нэмэх */
+    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Сүүдэр нэмэх */
+    padding-left: 30px;
 }
 
 .button1 {
@@ -48,15 +50,15 @@ body {
     flex-wrap: wrap; /* Бүх товчлууруудыг жижиг дэлгэцэнд багтаах */
     justify-content: flex-end; /* Баруун талд байрлуулах */
     gap: 15px; /* Товчлууруудын хоорондох зай */
-    border: solid green; /* Товчлууруудын хэсгийн хүрээ */
+    /*border: solid green; /* Товчлууруудын хэсгийн хүрээ */
 }
 
 .button1 a {
     padding: 10px 15px;
-    background: linear-gradient(135deg, #ffdca9, #ffbc8b); /* Шаргал-улаан өнгийн градиент */
-    border: 1px solid #ddd;
+    /*background: linear-gradient(135deg, #ffdca9, #ffbc8b); /* Шаргал-улаан өнгийн градиент */
+    /*border: 1px solid #ddd;*/
     border-radius: 5px;
-    color: #fff; /* Цагаан текст */
+    color: #070606; /* Цагаан текст */
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Текстийн зөөлөн сүүдэр */
     transition: background-color 0.3s ease, transform 0.2s ease; /* Хөдөлгөөнт эффект */
@@ -77,7 +79,7 @@ body {
     gap: 20px;
     padding: 15px;
     background: linear-gradient(90deg, #fff3b0, #ffb6a0); /* Зөөлөн шар, роз өнгийн градиент */
-    border: solid orange; /* Нийгмийн сүлжээний хэсгийн хүрээ */
+    /*border: solid orange; /* Нийгмийн сүлжээний хэсгийн хүрээ */
     border-radius: 10px; /* Дугуй булангууд */
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Сүүдэр */
 }
@@ -85,16 +87,17 @@ body {
 .Contact {
     width: 100%;
     position: relative;
-    border: solid yellow; /* Холболтын хэсгийн хүрээ */
-    background: linear-gradient(135deg, #f9d5a7, #f1d6b0); /* Зөөлөн шаргал-улаан өнгийн градиент */
+    /*border: solid yellow; /* Холболтын хэсгийн хүрээ */
+    
     border-radius: 10px; /* Дугуй булангууд */
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Сүүдэр */
     color: #fff; /* Тод текстийн өнгө */
-    padding: 20px;
+    padding: 0px;
 }
 
 .Contact a {
-    display: inline-block;
+    display: flex;
+    width: 600px;
     padding: 15px 30px; /* Adjust padding for larger clickable area */
     font-size: 18px; /* Increase font size */
     background: linear-gradient(135deg, #ff9b8e, #ffb88c); /* Soft gradient background */
@@ -107,9 +110,9 @@ body {
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow for better visibility */
     position: absolute; /* Absolute positioning for control */
-    top: 60%; /* Move up until it reaches 60% of the image height */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Adjust to center horizontally */
+    margin-bottom: 0px;
 }
 
 .Contact a:hover {
@@ -124,7 +127,9 @@ body {
     align-items: center; /* Align items vertically */
     gap: 20px; /* Add space between the video and text */
     margin: 20px; /* Add some margin around the section */
-    border: solid blue; /* Undefined хэсгийн хүрээ */
+    margin-bottom: 0;
+    margin-top: 0;
+    /*border: solid blue; /* Undefined хэсгийн хүрээ */
     background: linear-gradient(135deg, #fbd9f1, #d8c8d6); /* Ягаан-суурь өнгийн градиент */
     border-radius: 10px; /* Дугуй булангууд */
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Зөөлөн сүүдэр */
@@ -150,12 +155,40 @@ body {
 }
 
 .Footer {
-    height: 40px;
+    height: 200px;
     background: linear-gradient(90deg, #fbe3e7, #f6c8a7); /* Сулаан улаан-гуацан өнгийн градиент */
-    border: solid black; /* Footer-ийн хүрээ */
+    /*border: solid black; /* Footer-ийн хүрээ */
     text-align: center;
     line-height: 40px;
     color: #fff;
     font-weight: bold;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Текстийн зөөлөн сүүдэр */
 }
+.item {
+    position: relative; /* Make the parent container a positioning context */
+}
+
+.item img {
+    width: 100%; /* Ensures the image takes up the full width */
+}
+
+.carousel-item-buttons {
+    position: absolute; /* Position the button in front of the image */
+    top: 80%; /* Vertically center the button */
+    left: 30%; /* Horizontally center the button */
+    transform: translate(-50%, -50%); /* Adjust for exact centering */
+    z-index: 10; /* Ensure the button is in front of the image */
+    display: flex; /* Optional: for centering content inside the button container */
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item-buttons a {
+    padding: 10px 20px; /* Adjust padding for button size */
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    color: white; /* Text color */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners for the button */
+}
+
+
