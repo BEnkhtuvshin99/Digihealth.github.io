@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Элементүүдийн нийт өргөн ба өндөрт padding ба border-ийг багтааж тооцно */
+}
+body {
+    font-family: Arial, sans-serif; /* Илүү уншихад тохиромжтой бичвэрийн фонт */
+    line-height: 1.6; /* Уншихад илүү хялбар болгох */
+    border: solid black; /* Биеийн хүрээний хүрээ */
+}
+.Container {
+    max-width: 1200px; /* Том дэлгэцүүд дээр хамгийн их өргөн */
+    margin: 0 auto; /* Контейнерийг төвлөрүүлэх */
+    width: 100%; 
+    min-height: 1500px; /* Тогтмол өндөр оронд хамгийн бага өндөр */
+    border: solid red; /* Контейнерын хүрээ */
+}
+.Title{
+    max-width: 1000px;
+    border: solid green;
+    height: 200px;
+    display: flex;
+    margin-left: 100px;
+    align-items: center;
+    justify-content: center;
+
+}
+.mem_container{
+    float: left;
+    width: 100%;
+}
+*:after,*:before{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+
+}
+.members {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px;
+    gap: 20px; /* Adjust the gap as needed */
+  }
+  
+  .member {
+    border: 1px solid #ccc;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .member img {
+    max-width: 100%;
+    height: auto;
+  }
