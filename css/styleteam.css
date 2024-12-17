@@ -1,19 +1,19 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Элементүүдийн нийт өргөн ба өндөрт padding ба border-ийг багтааж тооцно */
+    box-sizing: border-box; 
 }
 body {
-    font-family: Arial, sans-serif; /* Илүү уншихад тохиромжтой бичвэрийн фонт */
-    line-height: 1.6; /* Уншихад илүү хялбар болгох */
-    border: solid black; /* Биеийн хүрээний хүрээ */
+    font-family: Arial, sans-serif; 
+    line-height: 1.6;
+    border: solid black; 
 }
 .Container {
-    max-width: 1200px; /* Том дэлгэцүүд дээр хамгийн их өргөн */
-    margin: 0 auto; /* Контейнерийг төвлөрүүлэх */
+    max-width: 1200px; 
+    margin: 0 auto; 
     width: 100%; 
-    min-height: 1500px; /* Тогтмол өндөр оронд хамгийн бага өндөр */
-    border: solid red; /* Контейнерын хүрээ */
+    min-height: 1500px; 
+    border: solid red; 
 }
 .Title{
     max-width: 1000px;
@@ -39,7 +39,7 @@ body {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 10px;
-    gap: 20px; /* Adjust the gap as needed */
+    gap: 20px; 
   }
   
   .member {

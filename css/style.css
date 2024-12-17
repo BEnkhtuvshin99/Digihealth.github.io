@@ -1,202 +1,207 @@
 * {
     margin: 0;
     padding: 0;
-    /*box-sizing: border-box; /* Элементүүдийн нийт өргөн ба өндөрт padding ба border-ийг багтааж тооцно */
+    box-sizing: border-box; 
 }
 
 body {
-    font-family: Arial, sans-serif; /* Илүү уншихад тохиромжтой бичвэрийн фонт */
-    line-height: 1.6; /* Уншихад илүү хялбар болгох */
-    background: linear-gradient(135deg, #f8d7b9, #ffe4c4); /* Зөөлөн шаргал-гуацан өнгийн градиент */
-    /*border: solid black; /* Биеийн хүрээний хүрээ */
-    color: #333; /* Тод хар текст */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(135deg, #f8d7b9, #ffe4c4);
+    color: #333;
     width: 100%;
 }
 
 .Container {
-    max-width: 2000px; /* Том дэлгэцүүд дээр хамгийн их өргөн */
-    margin: 0 auto; /* Контейнерийг төвлөрүүлэх */
-    width: 100%; 
-    min-height: 1500px; /* Тогтмол өндөр оронд хамгийн бага өндөр */
-    /*border: solid red; /* Контейнерын хүрээ */
+    max-width: 1800px;
+    margin: 0 auto;
+    width: 100%;
+    min-height: 1500px;
     background: white;
-    border-radius: 0px; /* Дугуй булангууд */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Нарийхан сүүдэр */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 10px;
 }
+
 .Header {
     display: flex;
-    justify-content: left; /* Space between groups (images and links) */
-    align-items: center; /* Align items vertically */
-    padding: 20px; /* Space around the whole Header section */
-    flex-wrap: wrap; /* Wrap items if the screen is too small */
+    justify-content: left;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 10px 20px;
     background: white;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a neat look */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .Header img {
-    max-width: 100px;
+    max-width: 80px;
     height: auto;
-    border-radius: 50%; /* Circular image style */
-    margin: 0; /* Ensure no extra space around the images */
-    padding: 0; /* Remove additional padding */
+    border-radius: 50%;
+    margin-right: 300px;
 }
-
-.Header img:not(:last-child) {
-    margin-right: 10px; /* Adjust space only between images */
-}
-
 
 .button1 {
     display: flex;
-    flex-wrap: wrap; /* Бүх товчлууруудыг жижиг дэлгэцэнд багтаах */
-    justify-content: flex-end; /* Баруун талд байрлуулах */
-    gap: 15px; /* Товчлууруудын хоорондох зай */
-    padding-left: 800px;
-    /*border: solid green; /* Товчлууруудын хэсгийн хүрээ */
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    gap: 10px;
 }
 
 .button1 a {
     padding: 10px 15px;
     background-color: rgb(118, 118, 247);
-    /*background: linear-gradient(135deg, #ffdca9, #ffbc8b); /* Шаргал-улаан өнгийн градиент */
-    /*border: 1px solid #ddd;*/
-    border-radius: 5px;
-    color: #070606; /* Цагаан текст */
+    color: white;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Текстийн зөөлөн сүүдэр */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Хөдөлгөөнт эффект */
+    border-radius: 5px;
     text-decoration: none;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Товчлууруудын сүүдэр */
+    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .button1 a:hover {
-    background: linear-gradient(135deg, #ffbc8b, #ffdca9); /* Hover үед градиент эсрэгээр өөрчлөгдөх */
-    transform: scale(1.05); /* Томруулах эффект */
+    background-color: #ffbc8b;
+    transform: scale(1.05);
 }
 
 .Social {
     display: flex;
-    justify-content: center; /* Төвлөрүүлэх */
-    align-items: center;
+    justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
-    padding: 15px;
-    background: linear-gradient(90deg, #fff3b0, #ffb6a0); /* Зөөлөн шар, роз өнгийн градиент */
-    /*border: solid orange; /* Нийгмийн сүлжээний хэсгийн хүрээ */
-    border-radius: 10px; /* Дугуй булангууд */
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Сүүдэр */
-    
-}
-.Social a{
-    text-decoration: none;
+    gap: 15px;
+    padding: 10px;
+    background: linear-gradient(90deg, #fff3b0, #ffb6a0);
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .Contact {
     width: 100%;
-    position: relative;
-    /*border: solid yellow; /* Холболтын хэсгийн хүрээ */
-    
-    border-radius: 10px; /* Дугуй булангууд */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Сүүдэр */
-    color: #fff; /* Тод текстийн өнгө */
-    padding: 0px;
+    text-align: center;
+    padding: 20px;
 }
 
 .Contact a {
     display: flex;
     width: 600px;
-    padding: 15px 30px; /* Adjust padding for larger clickable area */
-    font-size: 18px; /* Increase font size */
-    background: linear-gradient(135deg, #ff9b8e, #ffb88c); /* Soft gradient background */
-    color: white; /* White text */
+    padding: 15px 30px; 
+    font-size: 18px; 
+    background: linear-gradient(135deg, #ff9b8e, #ffb88c); 
+    color: white; 
     text-align: center;
     text-decoration: none;
-    border-radius: 10px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Softer shadow for more emphasis */
-    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth transition */
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: background-color 0.3s ease, transform 0.2s ease; 
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Text shadow for better visibility */
-    position: absolute; /* Absolute positioning for control */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust to center horizontally */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); 
+    position: absolute; 
+    left: 50%; 
+    transform: translateX(-50%);
+    top:90%; 
     margin-bottom: 0px;
 }
 
-.Contact a:hover {
-    background: linear-gradient(135deg, #ffb88c, #ff9b8e); /* Reverse gradient on hover */
-    transform: scale(1.05) translateX(-50%); /* Slight zoom-in effect on hover */
-}
-
-
 
 .Undefined {
-    display: flex; /* Arrange items in a row */
-    align-items: center; /* Align items vertically */
-    gap: 20px; /* Add space between the video and text */
-    margin: 20px; /* Add some margin around the section */
-    margin-bottom: 0;
-    margin-top: 0;
-    /*border: solid blue; /* Undefined хэсгийн хүрээ */
-    background: linear-gradient(135deg, #fbd9f1, #d8c8d6); /* Ягаан-суурь өнгийн градиент */
-    border-radius: 10px; /* Дугуй булангууд */
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* Зөөлөн сүүдэр */
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 10px 0;
+    padding: 10px;
+    background: linear-gradient(135deg, #fbd9f1, #d8c8d6);
+    border-radius: 10px;
 }
 
 .Undefined iframe {
-    flex: 2; /* Allow the video to take more space */
-    max-width: 100%; /* Ensure it remains responsive */
-    padding:0;
-    background: #ffffff; /* IFrame дэвсгэр */
-    border-radius: 10px; /* Дугуй булангууд */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Сүүдэр */
+    width: 100%;
+    height: 250px;
+    border-radius: 10px;
 }
 
 .Undefined p {
-    flex: 1; /* Allow the text to adjust its width */
-    margin: 0; /* Remove default margin from the text */
-    background: linear-gradient(135deg, #f8e8e0, #f1d8c1); /* Зөөлөн халуун өнгийн градиент */
-    padding: 15px;
-    border-radius: 10px; /* Дугуй булангууд */
-    color: #fff; /* Тод текстийн өнгө */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Текстийн зөөлөн сүүдэр */
+    padding: 10px;
+    background: linear-gradient(135deg, #f8e8e0, #f1d8c1);
+    border-radius: 10px;
 }
 
 .Footer {
-    height: 200px;
-    background: linear-gradient(90deg, #fbe3e7, #f6c8a7); /* Сулаан улаан-гуацан өнгийн градиент */
-    /*border: solid black; /* Footer-ийн хүрээ */
     text-align: center;
-    line-height: 40px;
-    color: #fff;
+    padding: 20px;
+    background: linear-gradient(90deg, #fbe3e7, #f6c8a7);
+    color: white;
     font-weight: bold;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Текстийн зөөлөн сүүдэр */
-}
-.item {
-    position: relative; /* Make the parent container a positioning context */
-}
-
-.item img {
-    width: 100%; /* Ensures the image takes up the full width */
 }
 
 .carousel-item-buttons {
-    position: absolute; /* Position the button in front of the image */
-    top: 80%; /* Vertically center the button */
-    left: 30%; /* Horizontally center the button */
-    transform: translate(-50%, -50%); /* Adjust for exact centering */
-    z-index: 10; /* Ensure the button is in front of the image */
-    display: flex; /* Optional: for centering content inside the button container */
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
     justify-content: center;
-    align-items: center;
 }
 
 .carousel-item-buttons a {
-    padding: 10px 20px; /* Adjust padding for button size */
-    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-    color: white; /* Text color */
-    text-decoration: none; /* Remove underline */
-    border-radius: 5px; /* Rounded corners for the button */
+    padding: 10px 15px;
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
 }
 
 
+@media (max-width: 768px) {
+    .Header {
+        justify-content: center;
+    }
+
+    .button1 {
+        justify-content: center;
+        padding-left: 0;
+    }
+
+    .Container {
+        min-height: auto;
+    }
+
+    .Undefined {
+        flex-direction: column;
+    }
+
+    .Contact a {
+        width: 90%;
+    }
+
+    .carousel-item-buttons {
+        top: 85%;
+    }
+}
+
+
+@media (max-width: 480px) {
+    .Header img {
+        max-width: 60px;
+    }
+
+    .button1 a {
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+
+    .Social {
+        gap: 10px;
+    }
+
+    .Contact a {
+        font-size: 14px;
+        padding: 8px 12px;
+    }
+
+    .Undefined iframe {
+        height: 180px;
+    }
+
+    .Footer {
+        font-size: 14px;
+    }
+}

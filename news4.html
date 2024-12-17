@@ -35,10 +35,25 @@
     </head>
     <body>
         <div class="Title">
-            <h1><i class="fas fa-globe"></i> Миний Веб Хуудас</h1>
+            <h1><i class="fas fa-globe"></i> AI Models</h1>
         </div>
         <div class="Description">
-            <p>Энэ бол миний веб хуудасны танилцуулга хэсэг юм. Та эндээс олон сонирхолтой зүйлсийг унших боломжтой.</p>
+            <p>Existing AI applications in healthcare are broadly categorized into diagnosis, clinical decision-making, and prognosis [2, 6]. 
+                The joint team from ULL and NUM focused on developing a machine-learning model capable of detecting and predicting tooth cavities in children based 
+                on the data collected and labeled by the MNUMS team.
+                To achieve this, the team first prepared training data by examining children aged 3 to 6. Each child underwent a full oral examination using an intraoral camera,
+                 which produced around ten images per child. These images and diagnoses made by pediatric dentists formed the core of the dataset. 
+                In addition to the image data, the children’s guardians were asked to complete a 47-question survey covering five categories, including health information and oral
+                 care habits.
+                Several kindergartens volunteered to participate in the study, allowing the team to gather a larger pool of data. As part of this effort, free dental examinations
+                 were conducted in dental offices, ensuring a thorough and accessible data collection process. By combining intraoral images, diagnoses, and survey responses, the 
+                 team created a comprehensive dataset that not only helped train the machine learning model but also provided valuable insights into children's oral health.
+                After labeling the initial batch of data, the ULL team immediately trained a prediction model. During this phase, we encountered a significant imbalance in the 
+                dataset, as certain category labels were underrepresented, resulting in the model’s inability to detect them. This imbalance occurred because the initial batch 
+                contained fewer samples for some categories, which affected the model's performance by skewing predictions toward the more common categories (Figure 10).
+                In the second phase of data labeling, we focused on resolving this issue. We took a targeted approach to gather additional data specifically 
+                for the underrepresented categories, aiming to create a more balanced dataset. While this effort improved the overall distribution (Figure 10), 
+                some categories remained imbalanced due to their rarity in general cases, although they are still crucial to classify.</p>
         </div>
     </body>
 </html>
