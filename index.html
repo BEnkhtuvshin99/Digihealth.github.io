@@ -4,58 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Веб хуудас</title>
-
-    <!-- Owl Carousel-ийн CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
-    
-    <!-- Font Awesome-ийн иконнууд -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-    
-    <!-- Хувийн CSS -->
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     
     <style>
-        /* Carousel-д зурагны дэлгэрэнгүй харуулах */
         .owl-carousel .item img {
             width: 100%;
             height: auto;
-            object-fit: cover; /* Зургийг хамаарах хэсэгт нь тохируулна */
+            object-fit: cover; 
         }
-
-        /* Зураг дээрх товчлуурыг байрлуулах */
         .carousel-item-buttons {
-            position: absolute; /* Зураг дээр байрлуулах */
-            bottom: 20px; /* Доод талд байрлуулах */
-            left: 50%; /* Төв байрлуулах */
-            transform: translateX(-50%); /* Төвлөрүүлэх */
+            position: absolute; 
+            bottom: 20px; 
+            left: 50%; 
+            transform: translateX(-50%); 
             display: flex;
-            gap: 10px; /* Товчлуурын хоорондох зай */
+            gap: 10px; 
         }
 
         .carousel-item-buttons button {
             padding: 10px 20px;
-            background-color: rgba(0, 0, 0, 0.5); /* Товчлуурын дэвсгэр нь хагас тодорхой */
+            background-color: rgba(0, 0, 0, 0.5); 
             color: white;
             border: none;
             border-radius: 5px;
             cursor: pointer;
-            transition: background-color 0.3s; /* Өнгө нь өөрчлөгдөхөд тодорхой хугацаа */
+            transition: background-color 0.3s; 
         }
 
         .carousel-item-buttons button:hover {
-            background-color: rgba(0, 0, 0, 0.8); /* Hover хийснээр харанхуйлна */
+            background-color: rgba(0, 0, 0, 0.8); 
         }
 
         .item {
-            position: relative; /* Товчлуурыг энэ хэсэгт харуулах */
+            position: relative; 
         }
     </style>
-    
-    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-
-    <!-- Owl Carousel-ийн JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </head>
 <body>
@@ -70,11 +57,6 @@
                 <a href="./team.html" target="_blank">Төслийн Баг</a>
             </div>
         </div>
-        
-        <!-- Нийгмийн медиа холбоос -->
-
-
-        <!-- Owl Carousel -->
         <div class="Contact">
             <div class="owl-carousel owl-theme">
                 <div class="item">
