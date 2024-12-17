@@ -23,34 +23,36 @@ body {
     border-radius: 0px; /* Дугуй булангууд */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Нарийхан сүүдэр */
 }
-
 .Header {
     display: flex;
-    justify-content: space-between; /* Элементүүдийг хооронд нь зайтай байрлуулна */
-    align-items: center; /* Дээрээ ба доороо тэгшлэх */
-    padding: 20px;
-    flex-wrap: wrap; /* Жижиг дэлгэцүүдэд багтаах */
-    /*border: solid black; /* Header хэсгийн хүрээ */
+    justify-content: left; /* Space between groups (images and links) */
+    align-items: center; /* Align items vertically */
+    padding: 20px; /* Space around the whole Header section */
+    flex-wrap: wrap; /* Wrap items if the screen is too small */
     background: white;
-    border-radius: 10px; /* Дугуй булангууд */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Сүүдэр */
-    
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for a neat look */
 }
 
 .Header img {
     max-width: 100px;
     height: auto;
-    /*border: solid blue; /* Логоны зургийн хүрээ */
-    border-radius: 50%; /* Дугуй логон хүрээ */
-    /*box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Сүүдэр нэмэх */
-    padding-left: 30px;
+    border-radius: 50%; /* Circular image style */
+    margin: 0; /* Ensure no extra space around the images */
+    padding: 0; /* Remove additional padding */
 }
+
+.Header img:not(:last-child) {
+    margin-right: 10px; /* Adjust space only between images */
+}
+
 
 .button1 {
     display: flex;
     flex-wrap: wrap; /* Бүх товчлууруудыг жижиг дэлгэцэнд багтаах */
     justify-content: flex-end; /* Баруун талд байрлуулах */
     gap: 15px; /* Товчлууруудын хоорондох зай */
+    padding-left: 800px;
     /*border: solid green; /* Товчлууруудын хэсгийн хүрээ */
 }
 
